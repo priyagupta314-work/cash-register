@@ -20,7 +20,7 @@
                 const userBillAmount = billAmountEl.value;
                 const cashPaidByUser = cashPaidEl.value;
                 let changeAmount = parseInt(cashPaidByUser) - parseInt(userBillAmount);
-                changeAmountEl.innerText = `Change money: ${changeAmount} INR`
+                changeAmountEl.innerText = `Please return Rs. ${changeAmount} to the customer`
                 const denominations = [2000, 500, 100, 20, 10, 5, 1];
                 
                 for(let i=0;i<denominations.length;i++){

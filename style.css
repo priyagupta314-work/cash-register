@@ -1,3 +1,6 @@
+.app-head{
+    text-decoration: underline;
+}
 .denominations{
     border: 1px solid black;
     min-width: 2em;
@@ -11,4 +14,16 @@
     border: 1px solid black;
     min-width: 2em;
     border-spacing: 0em;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-header{
+    background-color: #8ca9c2;
 }

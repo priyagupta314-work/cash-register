@@ -5,43 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <style>
-    .main{
-        display: flex;
-        flex-direction: column;
-        line-height: 2em;
-        margin:auto;
-        align-items: center;
-        justify-content: center;
-    }
+ 
 </style>
 <body>
+    <h3 class="app-head"> CASH REGISTER</h3>
     <div class="main">
-        <div class="user-inputs">
+        
+        <div class="form-group">
             <div>
-                <label> Bill amount: </label>
-                <input type="text" id="bill-amount"/>
+                <label for="bill-amount"> Bill amount: </label>
+                <input type="text" id="bill-amount" class="form-control" />
             </div>
             <div>
-                <label> Cash paid: </label>
-                <input type="text" id="cash-paid" />
+                <label for="cash-paid"> Cash given by customer: </label>
+                <input type="text" id="cash-paid" class="form-control"/>
             </div>
             <div>
-                <button id="submit"> Submit </button>
+                <button id="submit" type="submit" class="btn btn-primary btn-lg"> Submit </button>
             </div>
             
         </div>
         <div>
             <div>
-                <p id="change-amount"> </p>
+                <p id="change-amount" class="alert alert-success"> You have to return zero rupees.</p>
             </div>
            
         </div>
-        <table class="result-table">
+        <table class="table table-bordered">
             <tr >
-                <th> Available notes: </th>
+                <th class="table-header"> Available notes: </th>
                 <td class="denominations">2000</td>
                 <td class="denominations">500</td>
                 <td class="denominations">100</td>
@@ -53,7 +50,7 @@
         <!-- </table>
         <table> -->
             <tr>
-                <th> Number of notes: </th>
+                <th class="table-header"> Number of notes: </th>
                 <td class="notesCount">0</td>
                 <td class="notesCount">0</td>
                 <td class="notesCount">0</td>
