@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        display: flex;
+        flex-direction: column;
+        line-height: 2em;
+        margin:auto;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="user-inputs">
+            <div>
+                <label> Bill amount: </label>
+                <input type="text" id="bill-amount"/>
+            </div>
+            <div>
+                <label> Cash paid: </label>
+                <input type="text" id="cash-paid" />
+            </div>
+            <div>
+                <button id="submit"> Submit </button>
+            </div>
+            
+        </div>
+        <div>
+            <div>
+                <p id="change-amount"> </p>
+            </div>
+           
+        </div>
+        <table class="result-table">
+            <tr >
+                <th> Available notes: </th>
+                <td class="denominations">2000</td>
+                <td class="denominations">500</td>
+                <td class="denominations">100</td>
+                <td class="denominations">20</td>
+                <td class="denominations">10</td>
+                <td class="denominations">5</td>
+                <td class="denominations">1</td>
+            </tr>
+        <!-- </table>
+        <table> -->
+            <tr>
+                <th> Number of notes: </th>
+                <td class="notesCount">0</td>
+                <td class="notesCount">0</td>
+                <td class="notesCount">0</td>
+                <td class="notesCount">0</td>
+                <td class="notesCount">0</td>
+                <td class="notesCount">0</td>
+                <td class="notesCount">0</td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>   
+    
+    
+
+</body>
+</html>

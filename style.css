@@ -1,0 +1,14 @@
+.denominations{
+    border: 1px solid black;
+    min-width: 2em;
+    
+}
+.notesCount{
+    border: 1px solid black;
+    min-width: 2em;
+}
+.result-table{
+    border: 1px solid black;
+    min-width: 2em;
+    border-spacing: 0em;
+}
